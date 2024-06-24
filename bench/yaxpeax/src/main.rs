@@ -62,7 +62,7 @@ pub fn main() -> Result<(), Box<dyn std::error::Error>> {
                     {
                         text.clear();
                         instruction
-                            .write_to(&mut text)
+                            .display_into(&mut text)
                             .expect("can format successfully");
                     }
 
